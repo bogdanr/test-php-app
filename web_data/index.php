@@ -12,7 +12,8 @@ $conn = new mysqli($server, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-//echo "Connected successfully";
+
+echo "Welcome to $1M CRM software solutions.<br><br>";
 
 $sql = "SELECT * FROM employees LIMIT 10";
 $result = $conn->query($sql);
@@ -26,5 +27,7 @@ if ($result->num_rows > 0) {
     echo "0 results";
 }
 $conn->close();
+
+echo "<br>Made by Ghita.";
 
 //phpinfo();
