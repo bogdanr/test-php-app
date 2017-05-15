@@ -13,9 +13,9 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-echo "Welcome to $1M CRM software solutions.<br><br>";
+echo "Welcome to $1.5M CRM software solutions.<br><br>";
 
-$sql = "SELECT * FROM employees LIMIT 10";
+$sql = "SELECT * FROM employees LIMIT 30";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
@@ -28,6 +28,6 @@ if ($result->num_rows > 0) {
 }
 $conn->close();
 
-echo "<br>Made by Ghita.";
+echo "<br>Made by Ghita software corporation.";
 
 //phpinfo();
